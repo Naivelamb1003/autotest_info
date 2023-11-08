@@ -1,3 +1,3 @@
 home_page_locators = {
-    "enroll_btn": ("XPATH", "//a[@href='/selenium-training?q=banner#enroll-form']"),
+    "menu_btns": ("CLASS_NAME", "top-card"),
 }

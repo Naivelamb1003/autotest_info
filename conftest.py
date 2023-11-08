@@ -5,8 +5,13 @@ from modules.api.clients.client import Client
 
 @pytest.fixture
 def test_user():
-    return {"first_name": "Testname", "last_name": "Testlastname", "city": "Kyiv", "email": "testmail@test.com",
-            "mobile": "0934459084"}
+    return {"first_name": "Testname", "last_name": "Testlastname", "user_name": "test_user_name",
+            "password": "Test_password1!"}
+
+
+@pytest.fixture
+def test_book_name():
+    return "Git Pocket Guide"
 
 
 @pytest.fixture

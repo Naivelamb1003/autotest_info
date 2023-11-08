@@ -1,4 +1,4 @@
-from config.config_ui import DRIVER_NAME, WAIT_TIME
+from config.config_ui import DRIVER_NAME
 from modules.ui.common.page_factory.page_factory import PageFactory
 
 
@@ -16,3 +16,9 @@ class BasePage(PageFactory):
     def get_element_list_by_locator(self, locator) -> list:
         driver_locator = transform_page_factory_locator_to_driver(locator)
         return self.driver.find_elements(driver_locator[0], driver_locator[1])
+
+    def scroll_site_down(self):
+        self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+
+    def dismiss_alert(self):
+        self.driver.execute_script("window.alert = function() {};")
