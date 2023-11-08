@@ -1,5 +1,3 @@
-import time
-
 from modules.ui.pages.base_page import BasePage
 from modules.ui.pages.book_store_home_page.book_store_home_locators import book_store_home_page_locators
 

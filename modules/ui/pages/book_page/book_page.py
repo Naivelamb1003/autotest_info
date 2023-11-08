@@ -5,6 +5,7 @@ from modules.ui.pages.base_page import BasePage
 from modules.ui.pages.book_page.book_locators import book_locators
 from selenium.webdriver.support import expected_conditions as EC
 
+
 class BookPage(BasePage):
     def __init__(self, driver):
         super().__init__(driver)

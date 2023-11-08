@@ -21,5 +21,4 @@ def api_client():
 
 @pytest.fixture
 def api_valid_user_data():
-    return {"firstName": "Testname", "lastName": "Testlastname", "city": "Kyiv", "email": "testmail@test.com",
-            "mobile": "0934459084", "country": "40", "code": "2z3x"}
+    return {"userName": "Testname9", "password": "Test_password1!"}

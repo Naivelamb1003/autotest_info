@@ -1,1 +1,1 @@
-BASE_URI = "https://www.toolsqa.com/api/"
+BASE_URI = "https://demoqa.com"
